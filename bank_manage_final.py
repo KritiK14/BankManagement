@@ -5,7 +5,7 @@ def account():
     
     acdb = mysql.connector.connect(host="localhost",user="root",passwd=" ",database="test_py")
     accur = acdb.cursor()
-    accur.execute("SELECT * FROM test_table3")
+    accur.execute("SELECT * FROM test_table3") #gets values from table
     acdata = accur.fetchall()
     
 
